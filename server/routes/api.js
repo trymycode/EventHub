@@ -48,4 +48,86 @@ router.post('/login', (req, res)=>{
     }
   })
 })
+router.get('/events', (req, res)=>{
+  let events = [
+    {
+      "_id": "1",
+      "name": "Event 1",
+      "description": "This is event1.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "2",
+      "name": "Event 2",
+      "description": "This is event2.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "3",
+      "name": "Event 3",
+      "description": "This is event3.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "4",
+      "name": "Event 4",
+      "description": "This is event4.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "5",
+      "name": "Event 5",
+      "description": "This is event5.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "6",
+      "name": "Event 6",
+      "description": "This is event6.This will available for all.",
+      "date":"2019-01-01"
+    }
+  ]
+  res.json(events);
+})
+router.get('/special', (req, res)=>{
+  let events = [
+    {
+      "_id": "1",
+      "name": "SpecialEvent 1",
+      "description": "This is event1.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "2",
+      "name": "SpecialEvent 2",
+      "description": "This is event2.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "3",
+      "name": "SpecialEvent 3",
+      "description": "This is event3.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "4",
+      "name": "SpecialEvent 4",
+      "description": "This is event4.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "5",
+      "name": "SpecialEvent 5",
+      "description": "This is event5.This will available for all.",
+      "date":"2019-01-01"
+    },
+    {
+      "_id": "6",
+      "name": "SpecialEvent 6",
+      "description": "This is event6.This will available for all.",
+      "date":"2019-01-01"
+    }
+  ]
+  res.json(events);
+})
 module.exports = router
