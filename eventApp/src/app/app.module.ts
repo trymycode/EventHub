@@ -1,3 +1,4 @@
+import { EventService } from './event.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -24,7 +25,7 @@ import { AuthService } from './auth.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ AuthService],
+  providers: [ AuthService, EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
