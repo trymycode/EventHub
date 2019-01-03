@@ -1,3 +1,18 @@
-<p>
-  special-events works!
-</p>
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let event of specialEvents">
+    <div class="card text-center">
+      <div class="card-body text-info">
+        <h5 class="card-title">
+          {{event.name}}
+        </h5>
+        <a href="" class="btn btn-info">Buy Tickets</a>
+        <p class="card-text">Only available for those who has bought tickets.</p>
+        <small> We will give 30% discount before 31st December.</small>
+      </div>
+      <div class="card-footer text-muted" style="background-color:#dfef1f">
+        {{event.date|date}} time: 6pm to 8pm.
+      </div>
+    </div>
+  </div>
+</div>
+
