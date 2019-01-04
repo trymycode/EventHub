@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../event.service';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -13,7 +14,7 @@ export class SpecialEventsComponent implements OnInit {
   specialEvents = []
 
   constructor(private _eventService: EventService,
-              private _router: Router) { }
+              private _router: Router,private _authService: AuthService) { }
 
 
   ngOnInit() {
